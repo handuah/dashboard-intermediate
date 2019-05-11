@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale = 1">
+    <title>Intermediate Dashboard</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/jquery.circliful.css"> -->
+    <script src="js/fontawesome-all.js"></script>
+</head>
+<body>
+     <!-- SIDEBAR SECTION -->
+     <div class="sidebar-container">
+         <nav id="sidebar">
+             <div class="sidebar-header">
+                 <img src="img/profile-pic2.png" alt="Profile pic">
+                 <a href="#profileMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Hannah Duah</a>
+                 <ul class="collapse list-unstyled" id="profileMenu">
+                     <li>
+                         <a href="#">Profile</a>
+                     </li>
+                     <li>
+                        <a href="#">Sign out</a>
+                     </li>
+                 </ul>    
+             </div><hr>
+
+             <div class="sidebar-contents">
+             <!-- main section -->
+             <p class="category-heading">Main</p>
+             <div class="row">
+                 <div class="col-md-2"><i class="fas fa-home"></i></div>
+                 <div class="col-md-10">
+                    <a class="category-text" href="#" >HOME</a> 
+                 </div>
+             </div>
+             <div class="row">
+                    <div class="col-md-2"><i class="fas fa-briefcase"></i></div>
+                    <div class="col-md-10">
+                        <a href="#" class="category-text ">JOBS</a> 
+                    </div>
+                </div>
+             <div class="row">
+                        <div class="col-md-2"><i class="fas fa-file-alt"></i></div>
+                        <div class="col-md-10">
+                            <a href="#" class="category-text ">RESUMES</a> 
+                        </div>
+            </div>
+            <div class="row">
+                    <div class="col-md-2"><i class="fas fa-file-alt"></i></div>
+                    <div class="col-md-10">
+                        <a  href="#" class="category-text ">TASKS</a> 
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="col-md-2"><i class="fas fa-calendar-alt"></i></div>
+                    <div class="col-md-10">
+                        <a href="#" class="category-text ">CALENDAR</a> 
+                    </div>
+            </div><hr>
+
+
+             <!-- admin section -->
+             <p class="category-heading">Admin</p>
+             <div class="row">
+                 <div class="col-md-2"><i class="fas fa-users"></i></div>
+                 <div class="col-md-10">
+                    <a href="#" class="category-text ">USERS</a> 
+                 </div>
+             </div>
+             <div class="row">
+                    <div class="col-md-2"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="col-md-10">
+                        <a href="#" class="category-text ">LOCATIONS</a> 
+                    </div>
+                </div>
+             <div class="row">
+                        <div class="col-md-2"><i class="fas fa-balance-scale"></i></div>
+                        <div class="col-md-10">
+                            <a href="#" class="category-text ">WORKFLOW</a> 
+                        </div>
+            </div>
+            <div class="row">
+                    <div class="col-md-2"><i class="fas fa-address-book"></i></div>
+                    <div class="col-md-10">
+                        <a href="#" class="category-text ">JOB BOARDS</a> 
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="col-md-2"><i class="fas fa-boxes"></i></div>
+                    <div class="col-md-10">
+                        <a href="#" class="category-text ">SOCIAL</a> 
+                    </div>
+            </div><hr>
+
+            <!-- categories section -->
+            <p class="category-heading">Categories</p>
+             <div class="row">
+                 <div class="col-md-12">
+                        <div id="administrative-checkbox" class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="admin">
+                            <label class="custom-control-label" for="admin"><a href="#" class="category-text ">Administrative</a> </label>
+                        </div>
+                    </div>
+                </div>
+               
+           
+             <div class="row">
+                    <div id="design-checkbox" class="col-md-12">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="design">
+                                <label class="custom-control-label" for="design"><a href="#" class="category-text ">Design</a> </label>
+                            </div>
+                    </div>
+                </div>
+             <div class="row">
+                <div class="col-md-12">
+                        <div id="executive-checkbox" class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="exec">
+                            <label class="custom-control-label" for="exec"><a href="#" class="category-text ">Executive</a> </label>
+                        </div>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                        <div id="humanresource-checkbox" class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="human-resource">
+                            <label class="custom-control-label" for="human-resource"><a href="#" 
+                                class="category-text ">Human Resources</a> </label>
+                        </div>
+                    </div>
+            </div>
+            
+        </div>
+         </nav>
+     </div>
+
+
+</div>
+     <!-- SIDEBAR END -->
+
+<!-- PAGE CONTENT -->
+     
+<div id="content">
+
+    <!-- TOP NAV STARTS HERE -->
+    <div id="top-nav">
+            
+        <div class="sideBarBtn">
+        <button type="button" id="sidebarCollapse" class="btn btn-info ">
+            <i class="fas fa-align-justify"></i>
+            
+        </button>
+        </div>
+
+        <div class="searchBar">
+            <form action="" class="form-inline">
+                <div class="input-group">
+                    <!-- <div class="input-group-prepend">
+                        <div class="input-group-text" id="btnSearch"><i class="fa fa-search"></i></div>
+                    </div> -->
+                    <input class="form-control" type="search" placeholder="Search for jobs, tasks and resumes">
+                </div>
+            </form>
+        </div>
+
+        <div class="pplBtn">
+            <button type="button" id="addPpl" class="btn btn-info">
+                <i class="fas fa-user-plus"></i>
+            </button>
+        </div>
+
+        <div class="contentBtn">
+        <button type="button" id="addContent" class="btn btn-info ">
+            <i class="fas fa-table"></i>
+        </button>
+        </div>
+        <div class="dashBtn">
+            <button type="button" id="dash" class="btn btn-info">
+                <i class="far fa-list-alt"></i>
+            </button>
+        </div>
+        </div>
+       <!-- TOP NAV ENDS HERE -->
+
+       <!-- USER INFO SECTION STARTS HERE -->
+        <div class="container">
+            <div id="user-info-section">
+                <div id="user-profile">
+                    <h3>Customer Service Representative</h3>
+                    <div id="location-details">
+                            <p class="small-text"><span><i class="fas fa-map-marker-alt"></i> San Francisco, CA</span> <span><a href="#"> Preview post</a></span></p>
+                    </div>
+                    
+                </div>
+
+                <div id="user-profile-icons">
+                    <button type="button" class="btn btn-info">OPEN</button>
+                    <button type="button" class="btn btn-info"><i class="fas fa-tag"></i></button>
+                    <button type="button" class="btn btn-info"><i class="fas fa-pencil-alt"></i></button>
+                    <button type="button" class="btn btn-info"><i class="fas fa-trash-alt"></i></button>
+                </div>
+            </div>
+     </div>
+     <!-- USER INFO SECTION ENDS HERE -->
+
+     <!-- SECONDARY NAVBAR -->
+     <section id="secondary-nav">
+         <div class="container">
+            <div class="row">
+                    <nav class="nav  my-2 mx-5">
+                            <a href="#" class="nav-link selected">SUMMARY</a>
+                            <a href="#" class="nav-link">APPLICANTS</a>
+                            <a href="#" class="nav-link">JOB BOARD</a>
+                            <a href="#" class="nav-link">INTERVIEWS</a>
+                            <a href="#" class="nav-link">ACTIVITY</a>
+                            <a href="#" class="nav-link">BRODCAST</a>
+                            <a href="#" class="nav-link">NOTIFICATION</a>
+                    </nav>
+            </div>
+         </div>
+     </section>
+
+     <!-- SECONDARY NAVBAR ENDS HERE -->
+
+     <!-- SUMMARY SECTION START -->
+     <section id="summary-section">
+
+         <!-- DIAGRAMS SECTION -->
+         <section id="diagrams">
+             <div class="container">
+                 <div class="row py-2">
+                     <div class="col-md-2">
+                         <div id="doughut-one"
+                         data-dimension = "250"
+                         data-info = "APPLICANTS"
+                         data-text = "APPLICANTS"
+                         data-width = "30"
+                         data-fontsize = "38"
+                         data-percent = "55"
+                         data-fgcolor = "##47BAC1"
+                         data-bgcolor = "#eee"
+                         data-fill = "#ddd"></div>
+                     </div>
+                     <div class="col-md-2">
+                            <div id="doughut-two"
+                            data-dimension = "250"
+                            data-info = "APPLICANTS"
+                            data-text = "INTERVIEWS"
+                            data-width = "30"
+                            data-fontsize = "38"
+                            data-percent = "76"
+                            data-fgcolor = "#15A4FA"
+                            data-bgcolor = "#eee"
+                            data-fill = "#ddd"></div>
+                        </div>
+                        <div class="col-md-2">
+                                <div id="doughut-three"
+                                data-dimension = "250"
+                                data-info = "APPLICANTS"
+                                data-text = "FORWARDS "
+                                data-width = "30"
+                                data-fontsize = "38"
+                                data-percent = "30"
+                                data-fgcolor = "#AE68AF"
+                                data-bgcolor = "#eee"
+                                data-fill = "#ddd"></div>
+                            </div>
+                        <div class="col-md-">
+                            <div id="chartContainer">                              
+                            </div>
+                        </div>
+                 </div>
+             </div>
+         </section>
+         <!-- DIAGRAMS SECTION END -->
+
+         <!-- POSTS SECTION -->
+         <section id="job-posts">
+            <div class="row py-5">
+                <div class="col-md-9">
+                    <div class="card">
+                            <div class="card-header">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                     <p class="my-2">JOB DESCRIPTION</p>
+                                    </div>
+                                    <div class="col-md-9">
+                                     <button type="button" class="btn btn-dark"> <span><i class="fas fa-pencil-alt"></i></span> EDIT</button>
+                                    </div>
+                                </div>
+                                                       
+                            </div>
+
+                        <div class="card-body">
+                            <div class="row py-2">
+                                <div class="col-md-3">
+                                    <p class="card-text">POSITION TITLE</p>
+                                </div>
+                                <div class="col-md-9">
+                                   <p class="card-text"> Customer Service Representative</p>
+                                </div>
+                            </div><hr>
+                            <div class="row py-2">
+                                    <div class="col-md-3">
+                                        <p class="card-text">LOCATION</p>
+                                    </div>
+                                    <div class="col-md-9">
+                                       <p class="card-text"> Accra, Ghana</p>
+                                    </div>
+                            </div><hr>
+                            <div class="row py-2">
+                                    <div class="col-md-3">
+                                        <p class="card-text">EMPLOYMENT TYPE</p>
+                                    </div>
+                                    <div class="col-md-9">
+                                       <p class="card-text"> Full-time</p>
+                                    </div>
+                            </div><hr>
+                            <div class="row py-2">
+                                    <div class="col-md-3">
+                                        <p class="card-text">EXPERIENCE</p>
+                                    </div>
+                                    <div class="col-md-9">
+                                       <p class="card-text"> Mid-level</p>
+                                    </div>
+                            </div><hr>
+                            <div class="row py-2">
+                                    <div class="col-md-3">
+                                        <p class="card-text">STATUS</p>
+                                    </div>
+                                    <div class="col-md-9">
+                                       <p class="card-text"> Open</p>
+                                    </div>
+                            </div><hr>
+                            <div class="row py-2">
+                                    <div class="col-md-3">
+                                        <p class="card-text">DESCRIPTION</p>
+                                    </div>
+                                    <div class="col-md-9">
+                                       <p class="card-text">The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle; helping the business reduce customer service wait times while doing a backhand spring and eating ham sandwich.</p>
+                                    </div>
+                            </div><hr>
+                            <div class="row py-2">
+                                    <div class="col-md-3">
+                                        <p class="card-text">HIRING LEAD</p>
+                                    </div>
+                                    <div class="col-md-9">
+                                       <p class="card-text"> Hannah Duah</p>
+                                    </div>
+                            </div><hr>
+                            <div class="row py-2">
+                                    <div class="col-md-3">
+                                        <p class="card-text">APPROVED SALARY</p>
+                                    </div>
+                                    <div class="col-md-9">
+                                       <p class="card-text"> $100,000</p>
+                                    </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                    <!-- JOB DESCRIPTION CARD ENDS HERE -->
+
+                    <!-- SOCIAL MEDIA SECTION -->
+                    <div class="col-md-3">
+                    <div id="btn-social-links">
+                        <button class="btn btn-info facebook-btn py-2 mb-2">
+                           <span><i class="fab fa-facebook-f"></i></span>
+                            <span class="p-4 text-bold">Post to Facebook</span>
+                        </button>
+                        <button class="btn btn-info twitter-btn py-2 my-2">
+                                <span><i class="fab fa-twitter"></i></span>
+                                 <span class="p-4 text-bold">Tweet this Job</span>
+                        </button>
+                        <button class="btn btn-info linkedin-btn py-2 my-2">
+                                <span><i class="fab fa-linkedin-in"></i></span>
+                                 <span class="p-4 text-bold">Post to Linkedin</span>
+                        </button>
+                        <!-- <button class="btn btn-info facebook-btn py-2 my-2">
+                                <span><i class="fab fa-facebook-f"></i></span>
+                                 <span class="p-4 text-bold">Post to Facebook</span>
+                         </button> -->
+                    </div>
+                    <!-- SOCIAL MEDIA BUTTONS END HERE -->
+
+                    <!-- LINK TO JOB SECTION -->
+                    <div id="link-to-job">
+                        <div class="row">
+                            <div class="col mt-2">
+                                <h6><span><i class="fas fa-globe"></i></span> 
+                                    <span class="ml-2">Link to this Job</span>
+                                </h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <form action="" class="form-inline">
+                                        <div class="input-group">
+                                           <input class="form-control" type="search" placeholder="hhtp://jobsearch.c....">
+                                             <div class="input-group-append">
+                                                <div class="input-group-text" id="btnSearch"><i class="fa fa-search"></i></div>
+                                            </div>
+                                        </div>
+                                    </form>
+                            </div>
+                        </div><hr>
+                    </div>
+
+                    <!-- BUTTON WIDGET SECTION -->
+                    <div id="button-widget">
+                        <div class="row">
+                            <div class="col mt-2">
+                                <h6><span><i class="fas fa-toggle-on"></i></i></span> 
+                                    <span class="ml-2">Use the Button Widget</span>
+                                </h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <form action="" class="form-inline">
+                                        <div class="input-group">
+                                            <input class="form-control" type="search" placeholder= "<script type=text/javascript>...">
+                                                <div class="input-group-append">
+                                                <div class="input-group-text" id="btnSearch"><i class="fa fa-search"></i></div>
+                                            </div>
+                                        </div>
+                                    </form>
+                            </div>
+                        </div><hr>
+                    </div>
+
+                    <!-- UPLOAD IMAGE -->
+                    <div id="upload-image">
+                    <div class="row">
+                        <div class="col mt-2">
+                            <h6><span><i class="fas fa-paper-plane"></i></span> 
+                                <span class="ml-2">Upload Resumes by Email</span>
+                            </h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <form action="" class="form-inline">
+                                    <div class="input-group">
+                                        <input class="form-control" type="search" placeholder="handuah@gmail.com">
+                                            <div class="input-group-append">
+                                            <div class="input-group-text" id="btnSearch"><i class="fa fa-search"></i></div>
+                                        </div>
+                                    </div>
+                                </form>
+                        </div>
+                    </div><hr>
+                </div>
+                </div>
+                </div>
+                </div>
+            </div>
+         </section>
+     </section>
+    </section>
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.circliful.min.js"></script>
+<script src="js/jquery.canvasjs.min.js"></script>
+<!-- script for toggle sidebar button -->
+<script>
+    $(document).ready(function () {
+
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+            $('#content').toggleClass('active');
+         });
+
+         $('#doughut-one').circliful({
+            noPercentageSign: true,
+            textBelow: true,
+         });
+
+         $('#doughut-two').circliful({
+            noPercentageSign: true,
+            textBelow: true,
+         });
+         $('#doughut-three').circliful({
+            noPercentageSign: true,
+            textBelow: true,
+         });
+
+
+         $("#chartContainer").CanvasJSChart({
+           
+                animationEnabled: true,
+                theme: "light2",
+                title: {
+                    text: ""
+                },
+                axisY: {
+                    title: "",
+                    suffix: "",
+                    includeZero: false
+                },
+                axisX: {
+                    title: "Applicants / Day"
+                },
+                data: [{
+                    type: "column",
+                    yValueFormatString: "#,##0.0#"%"",
+                    dataPoints: [
+                        { label: "S", y: 10.09 },	
+                        { label: "M", y: 9.40 },	
+                        { label: "T", y: 8.50 },
+                        { label: "W", y: 7.96 },	
+                        { label: "T", y: 7.80 },
+                        { label: "F", y: 7.56 },
+                        { label: "S", y: 7.20 },
+                        { label: "S", y: 7.1 }
+                        
+                    ]
+                }]
+
+         });
+
+    });
+</script>
+
+<!--[if lt IE 9]--/>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</html>

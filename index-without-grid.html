@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale = 1">
+    <title>Intermediate Dashboard</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/fontawesome-all.js"></script>
+</head>
+<body>
+     <!-- SIDEBAR SECTION -->
+     <div class="sidebar-container">
+         <nav id="sidebar">
+             <div class="sidebar-header">
+                 <img src="img/profile-pic2.png" alt="Profile pic">
+                 <a href="#profileMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Hannah Duah</a>
+                 <ul class="collapse list-unstyled" id="profileMenu">
+                     <li>
+                         <a href="#">Profile</a>
+                     </li>
+                     <li>
+                        <a href="#">Sign out</a>
+                     </li>
+                 </ul>    
+             </div><hr>
+
+             <div class="sidebar-contents">
+             <!-- main section -->
+             <p class="category-heading">Main</p>
+             <div class="row">
+                 <div class="col-md-2"><i class="fas fa-home"></i></div>
+                 <div class="col-md-10">
+                    <a class="category-text" href="#" >HOME</a> 
+                 </div>
+             </div>
+             <div class="row">
+                    <div class="col-md-2"><i class="fas fa-briefcase"></i></div>
+                    <div class="col-md-10">
+                        <a href="#" class="category-text ">JOBS</a> 
+                    </div>
+                </div>
+             <div class="row">
+                        <div class="col-md-2"><i class="fas fa-file-alt"></i></div>
+                        <div class="col-md-10">
+                            <a href="#" class="category-text ">RESUMES</a> 
+                        </div>
+            </div>
+            <div class="row">
+                    <div class="col-md-2"><i class="fas fa-file-alt"></i></div>
+                    <div class="col-md-10">
+                        <a  href="#" class="category-text ">TASKS</a> 
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="col-md-2"><i class="fas fa-calendar-alt"></i></div>
+                    <div class="col-md-10">
+                        <a href="#" class="category-text ">CALENDAR</a> 
+                    </div>
+            </div><hr>
+
+
+             <!-- admin section -->
+             <p class="category-heading">Admin</p>
+             <div class="row">
+                 <div class="col-md-2"><i class="fas fa-users"></i></div>
+                 <div class="col-md-10">
+                    <a href="#" class="category-text ">USERS</a> 
+                 </div>
+             </div>
+             <div class="row">
+                    <div class="col-md-2"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="col-md-10">
+                        <a href="#" class="category-text ">LOCATIONS</a> 
+                    </div>
+                </div>
+             <div class="row">
+                        <div class="col-md-2"><i class="fas fa-balance-scale"></i></div>
+                        <div class="col-md-10">
+                            <a href="#" class="category-text ">WORKFLOW</a> 
+                        </div>
+            </div>
+            <div class="row">
+                    <div class="col-md-2"><i class="fas fa-address-book"></i></div>
+                    <div class="col-md-10">
+                        <a href="#" class="category-text ">JOB BOARDS</a> 
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="col-md-2"><i class="fas fa-boxes"></i></div>
+                    <div class="col-md-10">
+                        <a href="#" class="category-text ">SOCIAL</a> 
+                    </div>
+            </div><hr>
+
+            <!-- categories section -->
+            <p class="category-heading">Categories</p>
+             <div class="row">
+                 <div class="col-md-12">
+                        <div id="administrative-checkbox" class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="admin">
+                            <label class="custom-control-label" for="admin"><a href="#" class="category-text ">Administrative</a> </label>
+                        </div>
+                    </div>
+                </div>
+               
+           
+             <div class="row">
+                    <div id="design-checkbox" class="col-md-12">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="design">
+                                <label class="custom-control-label" for="design"><a href="#" class="category-text ">Design</a> </label>
+                            </div>
+                    </div>
+                </div>
+             <div class="row">
+                <div class="col-md-12">
+                        <div id="executive-checkbox" class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="exec">
+                            <label class="custom-control-label" for="exec"><a href="#" class="category-text ">Executive</a> </label>
+                        </div>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                        <div id="humanresource-checkbox" class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="human-resource">
+                            <label class="custom-control-label" for="human-resource"><a href="#" class="category-text ">Human Resources</a> </label>
+                        </div>
+                    </div>
+            </div>
+            
+        </div>
+         </nav>
+     </div>
+
+
+</div>
+     <!-- SIDEBAR END -->
+<!-- PAGE CONTENT -->
+     
+<div id="content">
+    <div id="top-nav">
+    <!-- <nav class="navbar navbar-expand-lg  navbar-light bg-light"> -->
+        <div class="container-fluid">
+
+           <div class="row no-gutters no-padding">
+               <div class="col-md-1">
+                <button type="button" id="sidebarCollapse" class="btn btn-info ">
+                    <i class="fas fa-align-justify"></i>
+                    <!-- <span>Toggle Sidebar</span> -->
+                </button>
+               </div>
+
+               <div class="col-md-8">
+                   <form action="" class="form-inline">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text" id="btnSearch"><i class="fa fa-search"></i></div>
+                            </div>
+                            <input class="form-control" type="search" placeholder="Search for jobs, tasks and resumes">
+                        </div>
+                   </form>
+               </div>
+
+               <div class="col-md-1">
+                   
+                    <button type="button" id="addPpl" class="btn btn-info">
+                        <i class="fas fa-align-justify"></i>
+                        <!-- <span>Toggle Sidebar</span> -->
+                    </button>
+                    
+                 </div>
+
+                 <div class="col-md-1">
+                        
+                    <button type="button" id="addContent" class="btn btn-info ">
+                        <i class="fas fa-align-justify"></i>
+                        <!-- <span>Toggle Sidebar</span> -->
+                    </button>
+                       
+                 </div>
+                 <div class="col-md-1">
+                      
+                    <button type="button" id="dash" class="btn btn-info">
+                        <i class="fas fa-align-justify"></i>
+                        <!-- <span>Toggle Sidebar</span> -->
+                    </button>
+                      
+                </div>
+        </div>
+        </div>
+    <!-- </nav> --></div>
+</div>
+</body>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- script for toggle sidebar button -->
+<script>
+    $(document).ready(function () {
+
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+            $('#content').toggleClass('active');
+         });
+
+    });
+</script>
+
+<!--[if lt IE 9]--/>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</html>
